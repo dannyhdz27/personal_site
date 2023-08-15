@@ -2,162 +2,195 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel C Hernandez</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div>
-        <span>Daniel C Hernandez</span>
-        <span>Certified Full Stack Developer</span>
-      </div>
-      <div>
-        <div>
-          <a href="mailto:dannyhdz27@gmail.com">dannyhdz27@gmail.com</a>
-        </div>
-        <div>
-          <a href="https://github.com/dannyhdz27">GitHub</a>
-
-          <a href="https://www.linkedin.com/in/daniel-c-hernandez-dev/">
-            LinkedIn</a
-          >
-          <a href="portfolio.html">Portfolio</a>
+      <div class="container">
+        <nav>
+          <!-- <img src="assets/DW_Logo.jpg" alt="" /> -->
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h2>Daniel C Hernandez</h2>
         </div>
       </div>
     </header>
+    <!-- -------------About Section------------ -->
+    <div class="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-column-left">
+            <img src="assets/DW_Logo.jpg" alt="" />
+          </div>
+          <div class="about-column-right">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I'm a recent coding bootcamp graduate! Prior to my shift into full
+              stack development, I was a website consultant where I worked
+              collaboratively with web developers and graphic designers to
+              create impactful websites for small and medium-sized business
+              owners.
+            </p>
+            <p>
+              My growing interest in coding led me to pursue a career in
+              software engineering. Starting with HTML, CSS, and a little bit of
+              Bootstrap, I realized that I wanted to dive deeper into the world
+              of programming. After much consideration, I decided to jump into
+              this course to enhance my skills.
+            </p>
+            <p>
+              Currently, I'm actively learning and building upon the skills I
+              acquired at the bootcamp. I am eager to apply my knowledge and am
+              always seeking opportunities to further grow as a developer. My
+              main goal is to contribute to meaningful projects.
+            </p>
+            <p>
+              In terms of the future, I envision myself working as part of a
+              collaborative team, leveraging my skills and expertise to create
+              fun and innovative applications. I am open to exploring various
+              industries and companies, as long as they align with my passion
+              for using technology to solve problems and, of course, make a
+              positive impact.
+            </p>
+          </div>
+        </div>
+        <div class="row-2">
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+          <div class="tab-content active-tab" id="skills">
+            <p>
+              <strong>Proficient:</strong
+              ><span>
+                HTML, CSS, JavaScript, React, Node JS, Express, SQL, Git,
+                GitHub</span
+              >
+            </p>
+            <p>
+              <strong>Knowledgable:</strong>
+              <span>Bootstrap, SEO, C, Java</span>
+            </p>
+            <br />
+            <h3>Applications and Software</h3>
 
-    <main>
-      <h3>About Me</h3>
-      <div>
-        <p>
-          I'm a recent coding bootcamp graduate! Prior to my shift into full
-          stack development, I was a website consultant where I worked
-          collaboratively with web developers and graphic designers to create
-          impactful websites for small and medium-sized business owners.
-        </p>
-        <p>
-          My growing interest in coding led me to pursue a career in software
-          engineering. Starting with HTML, CSS, and a little bit of Bootstrap, I
-          realized that I wanted to dive deeper into the world of programming.
-          After much consideration, I decided to jump into this course to
-          enhance my skills.
-        </p>
-        <p>
-          Currently, I'm actively learning and building upon the skills I
-          acquired at the bootcamp. I am eager to apply my knowledge and am
-          always seeking opportunities to further grow as a developer. My main
-          goal is to contribute to meaningful projects.
-        </p>
-        <p>
-          In terms of the future, I envision myself working as part of a
-          collaborative team, leveraging my skills and expertise to create fun
-          and innovative applications. I am open to exploring various industries
-          and companies, as long as they align with my passion for using
-          technology to solve problems and, of course, make a positive impact.
-        </p>
-      </div>
-      <div>
-        <h3>Technical Skills</h3>
+            <div class="applications">
+              <div class="application-card">
+                <img src="assets/Visual_Studio_Logo.jpg" alt="Visual Studio" />
+                <span>VS Code</span>
+              </div>
+              <div class="application-card">
+                <img src="assets/DW_Logo.jpg" alt="Dreamweaver" />
+                <span>Dreamweaver</span>
+              </div>
+              <div class="application-card">
+                <img src="assets/Photoshot_logo.jpg" alt="Photoshop" />
+                <span>Photoshop</span>
+              </div>
+              <div class="application-card">
+                <img src="assets/WordPress_Logo.jpg" alt="Word Press" />
+                <span>Word Press</span>
+              </div>
+              <div class="application-card">
+                <img src="assets/GAnalytics.jpg" alt="Google Analytics" />
+                <span>Google Analytics</span>
+              </div>
+            </div>
+          </div>
 
-        <hr />
-        <p>
-          <strong>Proficient:</strong> HTML, CSS, JavaScript, React, Node JS,
-          Express, SQL, Git, GitHub
-        </p>
-        <p><strong>Knowledgable:</strong> Bootstrap, SEO, C, Java</p>
-      </div>
-      <h3>Applications and Software</h3>
+          <div class="tab-content" id="experience">
+            <div class="experience">
+              <div class="experience-card">
+                <p>Feb 2019</p>
+                <p><strong>Wieck </strong></p>
+                <ul>
+                  <li>
+                    Digital Content Specialist responsible for managing content
+                    on various media newsrooms. Tasks include preparing press
+                    releases, images, and videos for publication as well as
+                    email blasts.
+                  </li>
+                  <li>
+                    Used a variety of software applications to curate content as
+                    necessary and make applicable updates requested by our
+                    clients.
+                  </li>
+                </ul>
+              </div>
+              <div class="experience-card">
+                <p>June 2015- Feb 2018</p>
+                <p><strong>Dex YP</strong></p>
+                <ul>
+                  <li>
+                    Website Consultant and Copywriter assisting in the
+                    development and maintenance of small/medium sized business
+                    websites.
+                  </li>
+                  <li>
+                    Job duties included speaking with business owners from
+                    across the U.S., understanding and translating their
+                    business practice into SEO friendly copy for their website.
+                  </li>
+                  <li>
+                    Worked with a team of website designers and domain service
+                    specialists to provide our clients a modern and responsive
+                    business website.
+                  </li>
+                  <li>
+                    Acted as the main point of contact for our clients during
+                    the website development process. Delegated initial website
+                    build to a team of web developers and graphic designers.
+                    Reviewed the website and applied modifications as needed
+                    before publishing.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-      <div class="applications">
-        <div class="application-card">
-          <img src="assets/Visual_Studio_Logo.jpg" alt="Visual Studio" />
-          <span>VS Code</span>
-        </div>
-        <div class="application-card">
-          <img src="assets/DW_Logo.jpg" alt="Dreamweaver" />
-          <span>Dreamweaver</span>
-        </div>
-        <div class="application-card">
-          <img src="assets/Photoshot_logo.jpg" alt="Photoshop" />
-          <span>Photoshop</span>
-        </div>
-        <div class="application-card">
-          <img src="assets/WordPress_Logo.jpg" alt="Word Press" />
-          <span>Word Press</span>
-        </div>
-        <div class="application-card">
-          <img src="assets/GAnalytics.jpg" alt="Google Analytics" />
-          <span>Google Analytics</span>
+          <div class="tab-content" id="education">
+            <p><strong>Fullstack Academy Web Development Bootcamp</strong></p>
+            <p><span>Full Stack Developer Certificate</span></p>
+            <br />
+            <p><strong>The University of Texas at Dallas </strong></p>
+            <p>
+              <span>Department of Electrical and Computer Engineering</span>
+            </p>
+          </div>
         </div>
       </div>
-      <h3>Experience</h3>
-      <hr />
-      <div class="experience">
-        <div class="experience-card">
-          <p>Feb 2019</p>
-          <p><strong>Wieck </strong></p>
-          <ul>
-            <li>
-              Digital Content Specialist responsible for managing content on
-              various media newsrooms. Tasks include preparing press releases,
-              images, and videos for publication as well as email blasts.
-            </li>
-            <li>
-              Used a variety of software applications to curate content as
-              necessary and make applicable updates requested by our clients.
-            </li>
-          </ul>
-        </div>
-        <div class="experience-card">
-          <p>June 2015- Feb 2018</p>
-          <p><strong>Dex YP</strong></p>
-          <ul>
-            <li>
-              Website Consultant and Copywriter assisting in the development and
-              maintenance of small/medium sized business websites.
-            </li>
-            <li>
-              Job duties included speaking with business owners from across the
-              U.S., understanding and translating their business practice into
-              SEO friendly copy for their website.
-            </li>
-            <li>
-              Worked with a team of website designers and domain service
-              specialists to provide our clients a modern and responsive
-              business website.
-            </li>
-            <li>
-              Acted as the main point of contact for our clients during the
-              website development process. Delegated initial website build to a
-              team of web developers and graphic designers. Reviewed the website
-              and applied modifications as needed before publishing.
-            </li>
-          </ul>
-        </div>
+    </div>
+    <!-- -------------------- Portfolio/Projects----------------------- -->
+    <div class="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
       </div>
-      <div>
-        <h3>Education</h3>
-        <hr />
-        <p><strong>Fullstack Academy Web Development Bootcamp</strong></p>
-        <p>Full Stack Developer Certificate</p>
-        <p><strong>The University of Texas at Dallas </strong></p>
-        <p>Department of Electrical and Computer Engineering – 90 Credits</p>
-      </div>
-      <div>
-        <h3>Additional Skills</h3>
-        <hr />
-        <p>Bilingual, fluent in Spanish</p>
-      </div>
-    </main>
+    </div>
+    <script>
+      let tabLinks = document.getElementsByClassName("tab-links");
+      let tabContent = document.getElementsByClassName("tab-content");
+      function openTab(tabName) {
+        for (tablink of tabLinks) {
+          tablink.classList.remove("active-link");
+        }
 
-    <footer></footer>
+        for (tabcontent of tabContent) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
