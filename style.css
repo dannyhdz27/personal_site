@@ -166,8 +166,9 @@ nav ul li a:hover::after {
   flex: 0 0 45%;
   border: 1px solid #cdcdcd;
   padding: 10px;
-  border-radius: 5%;
+  border-radius: 2%;
   line-height: 125%;
+  box-shadow: 3px 3px 3px #cdcdcd;
 }
 
 .experience-card p {
@@ -192,4 +193,49 @@ nav ul li a:hover::after {
 .projects {
   padding: 30px 0;
   background-color: #222c31;
+  color: #cdcdcd;
+}
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.project-item {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.project-item img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(228, 52, 52));
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: 0.5s;
+}
+.layer h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.project-item:hover img {
+  transform: scale(1.1);
+}
+.project-item:hover .layer {
+  height: 100%;
 }
